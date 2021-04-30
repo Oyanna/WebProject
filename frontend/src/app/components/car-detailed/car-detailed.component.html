@@ -1,0 +1,65 @@
+<<<<<<< HEAD
+<div class="car">
+  <div class="upper car__top" *ngIf="car">
+    <a class="upper" routerLink="/profile/{{ car.author.id }}">
+      {{ car.author.username }}
+    </a>
+    {{ car.created_at }}
+  </div>
+  <p class="label">{{ car.title }}</p>
+  <p class="car__text">{{ car.text }}</p>
+
+  <button
+    class="car-likes"
+    [ngClass]="{ isLiked: isLikedByMe }"
+    (click)="onLikeClick()"
+  >
+    Likes: {{ likeCount }}
+  </button>
+  <h3 class="comment">Comments:</h3>
+  <div class="car-comments">
+    <div *ngFor="let comment of comments" class="comment-inner">
+      <a class="upper" routerLink="/profile/{{ comment.owner.id }}">{{
+        comment.owner.user.username
+      }}</a>
+      <p>{{ comment.text }}</p>
+    </div>
+    <div class="add-comment">
+      <input type="text" [(ngModel)]="newComment" />
+      <button (click)="onNewComment()">New Comment</button>
+    </div>
+  </div>
+</div>
+=======
+<div class="car">
+  <div class="upper car__top" *ngIf="car">
+    <a class="upper" routerLink="/profile/{{ car.author.id }}">
+      {{ car.author.user.username }}
+    </a>
+    {{ car.created_at }}
+  </div>
+  <p class="label">{{ car.title }}</p>
+  <p class="car__text">{{ car.text }}</p>
+
+  <button
+    class="car-likes"
+    [ngClass]="{ isLiked: isLikedByMe }"
+    (click)="onLikeClick()"
+  >
+    Likes: {{ likeCount }}
+  </button>
+  <h3 class="comment">Comments:</h3>
+  <div class="car-comments">
+    <div *ngFor="let comment of comments" class="comment-inner">
+      <a class="upper" routerLink="/profile/{{ comment.owner.id }}">{{
+        comment.owner.user.username
+      }}</a>
+      <p>{{ comment.text }}</p>
+    </div>
+    <div class="add-comment">
+      <input type="text" [(ngModel)]="newComment" />
+      <button (click)="onNewComment()">New Comment</button>
+    </div>
+  </div>
+</div>
+>>>>>>> a3c535873b43a0139387976543edb6ae22d37612

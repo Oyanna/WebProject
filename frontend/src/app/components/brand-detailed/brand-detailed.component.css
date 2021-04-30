@@ -1,0 +1,89 @@
+<<<<<<< HEAD
+.cars{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.car{
+    border-bottom: 1px solid grey;
+}
+
+.label{
+    font-size: 24px;
+    color: black;
+    border-bottom: 1px solid grey;
+}
+.title{
+    font-size: 24px;
+    color: black;
+}
+
+.upper{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #555555
+}
+
+.brand{
+    color: #777777;
+}
+
+.car__top {
+    padding: 5px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car__text {
+    max-height: 1.5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+=======
+.cars{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.car{
+    border-bottom: 1px solid grey;
+}
+
+.label{
+    font-size: 24px;
+    color: black;
+    border-bottom: 1px solid grey;
+}
+.title{
+    font-size: 24px;
+    color: black;
+}
+
+.upper{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #555555
+}
+
+.brand{
+    color: #777777;
+}
+
+.car__top {
+    padding: 5px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.car__text {
+    max-height: 1.5rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+>>>>>>> a3c535873b43a0139387976543edb6ae22d37612

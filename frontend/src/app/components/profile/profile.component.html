@@ -1,0 +1,70 @@
+<<<<<<< HEAD
+<div class="prof-comp">
+  <div *ngIf="myProfile">
+    <div class="profile__top">
+      <div class="profile__top__image--wrapper" *ngIf="myProfile.image">
+        <img src="{{ myProfile.image }}" alt="" class="profile__top__image">
+      </div>
+      <div class="profile__title">
+        <p class="title">{{ myProfile.user.username }}</p>
+        <p>{{ myProfile.user.email }}</p>
+        <!-- <p>{{ myProfile.user.birthday }}</p> -->
+      </div>
+    </div>
+    <div class="follow">
+      <div class="following">
+        <h3>Following: {{ following_count }}</h3>
+        <div *ngFor="let followingItem of myProfile.following">
+          <p>
+            <a routerLink="/profile/{{ followingItem.id }}">
+              {{ followingItem.name }}
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="followers">
+        <h3>Followers: {{ followers_count }}</h3>
+        <div *ngFor="let follower of myProfile.followers">
+          <p>
+            <a routerLink="/profile/{{ follower.id }}"> {{ follower.name }} </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="profile__cars">
+      <h3>POSTS: {{ cars_count }}</h3>
+      <div *ngFor="let car of myProfile.own_cars">
+        <p>
+          <a routerLink="/car/{{ car.id }}"> {{ car.title }} </a>
+        </p>
+      </div>
+    </div>
+    <app-create-car></app-create-car>
+  </div>
+</div>
+=======
+<div class="prof-comp">
+  <div *ngIf="myProfile">
+    <div class="profile__top">
+      <div class="profile__top__image--wrapper" *ngIf="myProfile.image">
+        <img src="{{ myProfile.image }}" alt="" class="profile__top__image">
+      </div>
+      <div class="profile__title">
+        <p class="title">{{ myProfile.user.username }}</p>
+        <p>{{ myProfile.user.email }}</p>
+        <!-- <p>{{ myProfile.user.birthday }}</p> -->
+      </div>
+    </div>
+
+    <div class="profile__cars">
+      <h3>POSTS: {{ cars_count }}</h3>
+      <div *ngFor="let car of myProfile.own_cars">
+        <p>
+          <a routerLink="/car/{{ car.id }}"> {{ car.title }} </a>
+        </p>
+      </div>
+    </div>
+    <app-create-car></app-create-car>
+  </div>
+</div>
+>>>>>>> a3c535873b43a0139387976543edb6ae22d37612

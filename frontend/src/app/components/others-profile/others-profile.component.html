@@ -1,0 +1,67 @@
+<<<<<<< HEAD
+<div class="prof-comp">
+  <div *ngIf="profile">
+    <div class="profile__top">
+      <div class="profile__top__image--wrapper" *ngIf="profile.image">
+        <img src="{{ profile.image }}" alt="" class="profile__top__image">
+      </div>
+      <div class="profile__title">
+        <p class="title">{{ profile.user.username }}</p>
+        <p>{{ profile.user.email }}</p>
+        <p>{{ profile.user.birthday }}</p>
+      </div>
+    </div>
+    <div class="follow">
+      <div class="following">
+        <h3>Following: {{ following_count }}</h3>
+        <div *ngFor="let followingItem of following">
+          <p>
+            <a routerLink="/profile/{{ followingItem.id }}">
+              {{ followingItem.user.username }}
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="followers">
+        <h3>Followers: {{ followers_count }}</h3>
+        <div *ngFor="let follower of followers">
+          <p>
+            <a routerLink="/profile/{{ follower.id }}"> {{ follower.user.username }} </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="profile__cars">
+      <h3>POSTS: {{ cars_count }}</h3>
+      <div *ngFor="let car of cars">
+        <p>
+          <a routerLink="/car/{{ car.id }}"> {{ car.title }} </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+=======
+<div class="prof-comp">
+  <div *ngIf="profile">
+    <div class="profile__top">
+      <div class="profile__top__image--wrapper" *ngIf="profile.image">
+        <img src="{{ profile.image }}" alt="" class="profile__top__image">
+      </div>
+      <div class="profile__title">
+        <p class="title">{{ profile.user.username }}</p>
+        <p>{{ profile.user.email }}</p>
+        <p>{{ profile.user.birthday }}</p>
+      </div>
+    </div>
+    <div class="profile__cars">
+      <h3>POSTS: {{ cars_count }}</h3>
+      <div *ngFor="let car of cars">
+        <p>
+          <a routerLink="/car/{{ car.id }}"> {{ car.title }} </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+>>>>>>> a3c535873b43a0139387976543edb6ae22d37612

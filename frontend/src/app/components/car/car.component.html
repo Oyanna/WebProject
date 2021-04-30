@@ -1,0 +1,43 @@
+<<<<<<< HEAD
+<div class="cars">
+  <div class="label">ALL POST</div>
+  <div class="car" *ngFor="let car of cars">
+    <div class="car__top upper">
+      <a class="upper" routerLink="/profile/{{ car.author.id }}">
+        {{ car.author.username }}
+      </a>
+      {{ car.created_at }}
+    </div>
+    <p class="title">
+      <a routerLink="/car/{{ car.id }}"> {{ car.title }} </a>
+    </p>
+    <a class="brand" routerLink="/brands/{{ car.brand.id }}">{{
+      car.brand.name
+    }}</a>
+
+    <p class="car__text">{{ car.text }}</p>
+    <br />
+  </div>
+</div>
+=======
+<div class="cars">
+  <div class="label">ALL POST</div>
+  <div class="car" *ngFor="let car of cars">
+    <div class="car__top upper">
+      <a class="upper" routerLink="/profile/{{ car.author.id }}">
+        {{ car.author.user.username }}
+      </a>
+      {{ car.created_at }}
+    </div>
+    <p class="title">
+      <a routerLink="/car/{{ car.id }}"> {{ car.title }} </a>
+    </p>
+    <a class="brand" routerLink="/brands/{{ car.brand.id }}">{{
+      car.brand.name
+    }}</a>
+
+    <p class="car__text">{{ car.text }}</p>
+    <br />
+  </div>
+</div>
+>>>>>>> a3c535873b43a0139387976543edb6ae22d37612

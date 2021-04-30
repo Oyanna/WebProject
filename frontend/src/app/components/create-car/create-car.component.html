@@ -1,0 +1,40 @@
+<<<<<<< HEAD
+<div class="create-from">
+  <div class="create-form__content">
+    <p class="create-form__content__label">Tittle : </p>
+    <input type="text" [(ngModel)]="newTitle"/>
+  </div>
+  <div class="create-form__content">
+    <p class="create-form__content__label">Brand: </p>
+    <select [(ngModel)]="newCarBrandId">
+      <option *ngFor="let brand of brands" value="{{ brand.id }}">{{ brand.name }}</option>
+    </select>
+  </div>
+  <div class="create-form__content">
+    <p class="create-form__content__label"> Text : </p>
+    <input type="text" [(ngModel)]="newText" />
+  </div>
+  <div class="create-form__bottom">
+    <button (click)="onCreateCar()">Create</button>
+  </div>
+=======
+<div class="create-from">
+  <div class="create-form__content">
+    <p class="create-form__content__label">Tittle : </p>
+    <input type="text" [(ngModel)]="newTitle"/>
+  </div>
+  <div class="create-form__content">
+    <p class="create-form__content__label">Brand: </p>
+    <select [(ngModel)]="newCarBrandId">
+      <option *ngFor="let brand of brands" value="{{ brand.id }}">{{ brand.name }}</option>
+    </select>
+  </div>
+  <div class="create-form__content">
+    <p class="create-form__content__label"> Text : </p>
+    <input type="text" [(ngModel)]="newText" />
+  </div>
+  <div class="create-form__bottom">
+    <button (click)="onCreateCar()">Create</button>
+  </div>
+>>>>>>> a3c535873b43a0139387976543edb6ae22d37612
+</div>

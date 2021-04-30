@@ -1,0 +1,110 @@
+<<<<<<< HEAD
+.prof-comp{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: burlywood; */
+    /* display: flex; */
+}
+.title{
+    font-size: 30px;
+}
+.follow{
+    display: flex;
+    justify-content: space-around;
+    background-color: cornsilk;
+}
+.following{
+    width: 40%;
+    /* background-color: blueviolet; */
+}
+.followers{
+    width: 40%;
+    /* background-color: brown; */
+}
+
+.profile__top {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.profile__top__image--wrapper {
+    width: 200px;
+    height: 200px;
+    border: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile__title {
+    padding: 20px 10%;
+    box-sizing: border-box;
+}
+
+.profile__top__image {
+    height: 100%;
+    width: auto;
+}
+
+.profile__cars {
+    margin: 10px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+=======
+.prof-comp{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: burlywood; */
+    /* display: flex; */
+}
+.title{
+    font-size: 30px;
+}
+.follow{
+    display: flex;
+    justify-content: space-around;
+    background-color: cornsilk;
+}
+.following{
+    width: 40%;
+    /* background-color: blueviolet; */
+}
+.followers{
+    width: 40%;
+    /* background-color: brown; */
+}
+
+.profile__top {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.profile__top__image--wrapper {
+    width: 200px;
+    height: 200px;
+    border: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile__title {
+    padding: 20px 10%;
+    box-sizing: border-box;
+}
+
+.profile__top__image {
+    height: 100%;
+    width: auto;
+}
+
+.profile__cars {
+    margin: 10px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+>>>>>>> a3c535873b43a0139387976543edb6ae22d37612
+}
